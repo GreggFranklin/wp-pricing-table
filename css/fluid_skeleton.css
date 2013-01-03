@@ -1,0 +1,150 @@
+/*
+* Fluid Skeleton 
+* Based on Skeleton, Dave Gamache
+* www.getskeleton.com
+* Butchered by Ian Yates
+* http://webdesign.tutsplus.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+/* apply a natural box layout model to all elements */
+* { 
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box;
+}
+
+/* Flexible Column Widths - mobile first
+================================================== */
+
+    	.container                                  { position: relative; width: 100%; max-width: 1140px; margin: 0 auto; padding: 0; }
+        .container .columns 						{ float: left; display: inline; padding-left: 1em; padding-right: 1em; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  				{ width: 100%; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen 				{ padding-left: 0; }
+        
+ 
+ /* #getting bigger - breakpoint tablets
+================================================== */       
+    @media only screen and (min-width: 480px) {      
+            
+        .container                                  { width: 90%; }
+        
+	}         
+        
+ /* #getting bigger - breakpoint beyond tablets portrait
+================================================== */       
+    @media only screen and (min-width: 767px) {
+    
+        .container .columns                         { padding-left: 1em; padding-right: 1em; }
+ 
+        .container .one.columns                     { width: 6.25%; }
+        .container .two.columns                     { width: 12.5%; }
+        .container .three.columns                   { width: 18.75%; }
+        .container .four.columns                    { width: 25%; }
+        .container .five.columns                    { width: 31.25%; }
+        .container .six.columns                     { width: 37.5%; }
+        .container .seven.columns                   { width: 43.75%; }
+        .container .eight.columns                   { width: 50%; }
+        .container .nine.columns                    { width: 56.25%; }
+        .container .ten.columns                     { width: 62.5%; }
+        .container .eleven.columns                  { width: 68.75%; }
+        .container .twelve.columns                  { width: 75%; }
+        .container .thirteen.columns                { width: 81.25%; }
+        .container .fourteen.columns                { width: 87.5%; }
+        .container .fifteen.columns                 { width: 93.75%; }
+        .container .sixteen.columns                 { width: 100%; }
+ 
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 6.25%; }
+        .container .offset-by-two                   { padding-left: 12.5%; }
+        .container .offset-by-three                 { padding-left: 18.75%; }
+        .container .offset-by-four                  { padding-left: 25%; }
+        .container .offset-by-five                  { padding-left: 31.25%; }
+        .container .offset-by-six                   { padding-left: 37.5%; }
+        .container .offset-by-seven                 { padding-left: 43.75%; }
+        .container .offset-by-eight                 { padding-left: 50%; }
+        .container .offset-by-nine                  { padding-left: 56.25%; }
+        .container .offset-by-ten                   { padding-left: 62.5%; }
+        .container .offset-by-eleven                { padding-left: 68.75%; }
+        .container .offset-by-twelve                { padding-left: 75%; }
+        .container .offset-by-thirteen              { padding-left: 81.25%; }
+        .container .offset-by-fourteen              { padding-left: 87.5%; }
+        .container .offset-by-fifteen               { padding-left: 93.75%; }
+
+        }
+        
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+    
+   

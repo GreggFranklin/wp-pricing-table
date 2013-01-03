@@ -1,0 +1,230 @@
+body { background-color:#fff; }
+
+.plan_features:nth-child(odd){
+    background: none repeat scroll 0 0 #F7F7F7;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 5px;
+
+
+}
+.plan_features:nth-child(even){
+    background: none repeat scroll 0 0 #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+.plan_price{
+
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+}
+#pricing_plan1 .plan_price,#pricing_plan1 .buy{
+    background: none repeat scroll 0 0 #B71A1A;
+    border-top: 1px solid #F83333;
+}
+#pricing_plan2 .plan_price,#pricing_plan2 .buy{
+    background: none repeat scroll 0 0 #1A7BB7;
+    border-top: 1px solid #4BA3FF;
+}
+#pricing_plan3 .plan_price,#pricing_plan3 .buy{
+    background: none repeat scroll 0 0 #2D964B;
+    border-top: 1px solid #5AD540;
+}
+#pricing_plan4 .plan_price,#pricing_plan4 .buy{
+    background: none repeat scroll 0 0 #909092;
+    border-top: 1px solid #B1ACAC;
+}
+
+.plan_title{
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 3px 3px 0 0;
+    color: #FFFFFF;
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #5E5858;
+}
+.plan{
+    border:1px solid #eee;
+    margin-bottom: 15px;
+}
+.plan_buy{
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 0 0 3px 3px;
+    padding: 20px;
+}
+.plan_buy a{
+
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 90px;
+}
+.plan_more{
+    background: none repeat scroll 0 0 #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 5px;
+    display: none;
+    border-left: 2px solid #302C2C;
+    border-right: 2px solid #302C2C;
+    border-bottom: 2px solid #302C2C;
+}
+.more_icon{
+    background-image: url("../plus_minus_icons.png");
+    background-position: 25px -3px;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+
+.more_icon:hover{
+    cursor: pointer;
+}
+.less_icon{
+    background-image: url("../plus_minus_icons.png");
+    background-position: 0px -3px;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+.less_icon:hover{
+    cursor: pointer;
+}
+
+
+.plan_features img{
+    float:left;
+}
+.feature_desc{
+    color: #4E4E4E;
+    font-family: arial;
+    text-align: center;
+}
+
+.highlight{
+    color: #333233;
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .plan_title{
+        width:45%;
+        float:left;
+        border-radius:3px 0 0 0;
+    }
+    .plan_price{
+        width:55%;
+        padding:20px 2%;
+        border-top:none !important;
+        float:left;
+
+    }  
+
+    .plan_more{
+        display: block;
+        clear: both;
+    }
+    .plan_buy{
+        padding: 10px;
+    }
+
+    .plan > dd {
+        height: 0;
+        overflow: hidden;
+        padding:0 !important;
+
+        opacity: 0;
+        filter: alpha(opacity=0); /* IE6-IE8 */
+        -webkit-transition: opacity 0.9s ease-in-out;
+        -moz-transition: opacity 0.9s ease-in-out;
+        -o-transition: opacity 0.9s ease-in-out;
+        -ms-transition: opacity 0.9s ease-in-out;
+        transition: opacity 0.9s ease-in-out;
+    }
+    .plan:target > dd{
+        padding: 10px 5px !important;
+        height: auto;
+        opacity: 1;
+        filter: alpha(opacity=100); /* IE6-IE8 */
+    }
+
+
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #pricing_plan4,#pricing_plan3,#pricing_plan2,#pricing_plan1{
+        width: 50%;
+
+    }
+
+    .plan_title{
+        width:auto;
+        float:none;
+        border-radius: 3px 3px 0 0;
+
+    }
+    .plan_price{
+        width:auto;
+        float:none;
+        border-top: 1px solid #F83333;
+
+    }
+    .plan_more{
+        display: none;
+    }
+
+
+    .plan > dd {
+        padding: 10px 5px !important;
+        height:auto;
+
+        opacity: 1;
+        filter: alpha(opacity=1); /* IE6-IE8 */
+        -webkit-transition: opacity 0.9s ease-in-out;
+        -moz-transition: opacity 0.9s ease-in-out;
+        -o-transition: opacity 0.9s ease-in-out;
+        -ms-transition: opacity 0.9s ease-in-out;
+        transition: opacity 0.9s ease-in-out;
+    }
+
+
+
+
+
+}     
